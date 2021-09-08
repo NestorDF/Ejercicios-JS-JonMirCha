@@ -18,17 +18,17 @@ miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 
 let cadena = "cadena de texto";
 
-function caracteres() {
-    if (tipeOf(cadena) === string) {
+function caracteres(cadena) {
+    if (tipeOf(cadena) === string)
         return cadena.length;
-    }
 }
 
 // 2)
 
 let recorte = "Este texto será recortado";
 
-function recortar() {
+function recortar(recorte) {
+    if (tipeOf(recorte) === string)
     return recorte.slice(5,10);
 }
 
@@ -36,7 +36,8 @@ function recortar() {
 
 let arreglo = "Esta cadena se convertirá en un array";
 
-function separar() {
+function separar(arreglo) {
+    if (tipeOf(arreglo) === string)
     return arreglo.split(" ");
 }
 
@@ -44,6 +45,7 @@ function separar() {
 
 let repeticiones = "Esta frase se repetirá";
 
-function repetir() {
+function repetir(repeticiones) {
+    if (tipeOf(cadena) === string)
     return repeticiones.repeat(5);
 }
